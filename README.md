@@ -1,5 +1,7 @@
 # RecursiveStringInterpolation
 
+![Tests](https://github.com/TobiStr/RecursiveStringInterpolation/workflows/.NET%20Core/badge.svg)
+
 Recursively interpolate strings with a given collection of key-value-pairs in .NET with configureable start and end tags.
 
 ## Information
