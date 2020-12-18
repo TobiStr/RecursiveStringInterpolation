@@ -15,6 +15,6 @@
 			Recursively interpolate strings with a given dictionary in .NET with configurable start and end tags.
 		</Description>
 		<NeutralLanguage>en</NeutralLanguage>
-		<PackageTags>String;Interpolation;StringInterpolation;Recursive;Recursion;RecursiveStringInterpolation;C#;.NET;Standard;Library</PackageTags>
+		<PackageTags>String;Interpolation;StringInterpolation;Recursive;Replace;Replacement;StringReplacement;Regex;Regexer;StringRegexer;Recursion;RecursiveStringInterpolation;C#;.NET;Standard;Library</PackageTags>
 	</PropertyGroup>
 </Project>
