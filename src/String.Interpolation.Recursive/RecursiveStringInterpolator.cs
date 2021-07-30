@@ -7,7 +7,7 @@ namespace String.Interpolation.Recursive
 {
     public class RecursiveStringInterpolator
     {
-        private const string REGEX_BASE = @"(?:openingTag)([^closingTag]*)(?:closingTag)";
+        private const string REGEX_BASE = @"(?:openingTag)([^closingTagopeningTag]*)(?:closingTag)";
 
         private readonly string openingTag;
 
