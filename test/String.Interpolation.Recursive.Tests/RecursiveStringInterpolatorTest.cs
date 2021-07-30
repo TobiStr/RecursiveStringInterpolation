@@ -51,7 +51,6 @@ namespace String.Interpolation.Recursive.Tests
                 yield return ("%", "%");
                 yield return ("$$$", "$$$");
                 yield return ("Test", "Test");
-                yield return ("TestStart", "TestEnd");
                 yield return ("<", ">");
                 yield return ("§", "§");
             }
