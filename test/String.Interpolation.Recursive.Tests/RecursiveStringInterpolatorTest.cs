@@ -88,5 +88,24 @@ namespace String.Interpolation.Recursive.Tests
                 () => stringInterpolator.Interpolate(testString, keyValues)
             );
         }
+
+        [Test]
+        public void NestedTagsTest()
+		{
+            var testString = "test()" +
+                "Command('TestCommand (path)')" +
+                "Command2('test (path)' + 'a(b)' + (path)/(path))";
+
+            var resultString = "test()" +
+                @"Command('TestCommand Test\test2\test.txt')" +
+                @"Command2('test Test\test2\test.txt' + 'a(b)' + Test\test2\test.txt/Test\test2\test.txt)";
+            var stringInterpolator = new RecursiveStringInterpolator("(", ")");
+
+            var keyValues = new Dictionary<string, string>();
+            keyValues.Add("path", @"Test\test2\test.txt");
+
+            var result = stringInterpolator.Interpolate(testString, keyValues);
+            Assert.That(result == resultString);
+        }
     }
 }
